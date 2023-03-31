@@ -1,4 +1,4 @@
-# core-code-from-scratch-readme
+<h1># core-code-from-scratch-readme Algorithms - Week 1</h1>
 <h1>Week challenges (Wednesday) 💻</h1>
 <h2>Let's make pizza 🍕</h2>
 <b>"Design an algorithm to prepare a pizza from scratch. Define the ingredients, what will be the flavor and the preparation."</b>
