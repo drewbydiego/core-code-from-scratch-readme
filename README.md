@@ -1,6 +1,7 @@
 # core-code-from-scratch-readme
 <h1>Week challenges (Wednesday) 💻</h1>
 <h2>Let's make pizza 🍕</h2>
+<b>"Design an algorithm to prepare a pizza from scratch. Define the ingredients, what will be the flavor and the preparation."</b>
 <h3>Solution</h3>
   <b>Flavor: cheese pizza.</b><br>
 Ingredients:
@@ -24,8 +25,8 @@ Ingredients:
 </ol><br>
 
 <h2>Hot N Cold 🤒 🧊 🔥</h2>
+<b>"Convert temperatures from Celsius to Fahrenheit and vice versa."</b>
 <h3>Solution</h3><br>
-<b>Convert temperatures from Celsius to Fahrenheit and vice versa.</b>
 <ol>
   <li>To convert from Celsius to Fahrenheit:</li>
     <ul>
@@ -42,8 +43,8 @@ Ingredients:
 </ol><br>
 
 <h2>Some geometry 📐</h2>
+<b>"Design an algorithm to calculate the volume of a pyramid, a cube and a sphere."</b>
 <h3>Solution</h3><br>
-<b>Design an algorithm to calculate the volume of a pyramid, a cube and a sphere.</b>
 <ol>
   <li>To calculate the volume of a pyramid:
     <ul>
