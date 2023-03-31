@@ -74,4 +74,5 @@ Ingredients:
 <h2>Numbers 📈</h2>
 <b>"Design an algorithm to check if a number is even or odd. If it is even, write that it is even, otherwise write that it is odd. Represent the algorithm in a flowchart."</b>
 <h3>Solution</h3><br>
-[![Even-or-Odd-Diagrama-de-flujo-week1.png](https://i.postimg.cc/yYCGMS2j/Even-or-Odd-Diagrama-de-flujo-week1.png)](https://postimg.cc/mhVVMhL1)
+[[![Even-or-Odd-Diagrama-de-flujo-week1.png](https://i.postimg.cc/yYCGMS2j/Even-or-Odd-Diagrama-de-flujo-week1.png)](https://postimg.cc/mhVVMhL1)
+](https://i.postimg.cc/yYCGMS2j/Even-or-Odd-Diagrama-de-flujo-week1.png)
