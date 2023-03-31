@@ -24,5 +24,21 @@ Ingredients:
 </ol><br>
 
 <h2>Hot N Cold 🤒 🧊 🔥</h2>
+<h3>Solution</h3><br>
+<b>Convert temperatures from Celsius to Fahrenheit and vice versa.</b>
+<ol>
+  <li>To convert from Celsius to Fahrenheit:</li>
+    <ul>
+       <li>Multiply the temperature in Celsius by 9/5.</li>
+       <li>Add 32 to the result.</li>
+       <li>The final number is the temperature in Fahrenheit.</li>
+    </ul>
+   <li>To convert from Fahrenheit to Celsius:</li>
+    <ul>
+       <li>Subtract 32 from the temperature in Fahrenheit.</li>
+       <li>Multiply the result by 5/9.</li>
+       <li>The final number is the temperature in Celsius.</li>
+    </ul>
+</ol><br>
 
 <h2>Some geometry 📐</h2>
