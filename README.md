@@ -91,3 +91,20 @@ Ingredients:
   <li><b>OUTPUT</b> the result -> "Your age is " + age<br></li>
   <li><b>End</b><br></li>
 </ol>
+
+<h2>Find the treasure 👑</h2>
+<b>"We are in a room with three chests. We know that at least one has a treasure in it. Each chest has a message, but all the messages are lies.<br><br>
+Left chest: The middle chest has a treasure<br>
+Middle chest: All these chests have treasures in them<br>
+Right chest: Only one of these chests has treasures.<br><br>
+
+Which chests have treasures?"<br></b>
+
+<img width="354" alt="202836372-19159ef8-14d5-4ecf-b08c-819b05e79f81" src="https://user-images.githubusercontent.com/76753050/229242574-e984db61-8956-494b-bc28-692fd33bc5d9.png">
+
+<h3>Solution</h3><br>
+<b>The chest A and C contain a treasure</b><br><br>
+The message on the left chest says that the middle chest has a treasure, but we know this can't be true because all the messages are lies. Therefore, the middle chest does not have a treasure.<br><br>
+The message on the middle chest says that all three chests have treasures, but since we know at least one message is false, this one must be false too. This means that at least one chest does not have a treasure, and since we already know the middle chest does not have a treasure, we can conclude that either the left or right chest has a treasure.<br><br>
+The message on the right chest says that only one chest has a treasure, but again, we know this is a lie. This means that either zero or two chests have a treasure.<br><br>
+After checking the posibilities on each chest, We can know that the middle chest does not have treasure but the other ones have, since "at least" one chest can have it We can choose the "A" or "C".
