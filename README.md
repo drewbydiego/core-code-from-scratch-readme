@@ -70,3 +70,7 @@ Ingredients:
     </ul>
   </li>
 </ol>
+<h1>Week challenges (Thursday) 💻</h1>
+<b>"Design an algorithm to check if a number is even or odd. If it is even, write that it is even, otherwise write that it is odd. Represent the algorithm in a flowchart."</b>
+<h3>Solution</h3><br>
+![Even or Odd -  Diagrama de flujo week1](https://user-images.githubusercontent.com/76753050/229237340-0c7ca72d-1c9b-46b5-b928-99808d15adbb.png)
