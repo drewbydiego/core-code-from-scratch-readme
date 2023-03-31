@@ -77,3 +77,17 @@ Ingredients:
 
 ![Even or Odd -  Diagrama de flujo week1 (1)](https://user-images.githubusercontent.com/76753050/229239320-571b6dd8-4087-44c4-8d68-38a05ddc7595.png)
 
+<h2>How old are you 👴</h2>
+<b>"Write pseudocode for an algorithm that calculates the age of a person based on date of birth"</b>
+<h3>Solution</h3><br>
+<ol>
+  <li><b>OUTPUT</b> a message to ask the date of birth -> "What is your date of bith?"<br></li>
+  <li><b>INPUT</b> user's date of birth<br></li>
+  <li><b>STORE</b> the date of birth -> 'date_of_birth'<br></li>
+  <li><b>DEFINE</b> the current year in a variable -> 'right_now'<br></li>
+  <li><b>DEFINE</b> a variable to calculate the age -> 'age'<br></li>
+  <li><b>CALCULATE</b> the age by subtracting the current date/year 'right_now' and the 'date_of_birth'<br>
+    age = right_now - date_of_birth<br></li>
+  <li><b>OUTPUT</b> the result -> "Your age is " + age<br></li>
+  <li><b>End</b><br></li>
+</ol>
