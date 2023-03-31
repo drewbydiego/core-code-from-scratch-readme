@@ -3,22 +3,25 @@
 <h2>Let's make pizza 🍕</h2>
 <h3>Solution</h3>
   <b>Flavor: cheese pizza.</b><br>
-<p>Ingredients:
--Pizza dough
--Tomato sauce
--Mozzarella cheese
--Salt
--Olive oil<br>
+Ingredients:
+<ol type=”A”>
+  <li>Pizza dough</li>
+  <li>Tomato sauce</li>
+  <li>Mozzarella cheese</li>
+  <li>Salt</li>
+  <li>Olive oil</li>
+</ol><br>
   <b>Preparation:</b><br>
-1. Preheat the oven to a high temperature.
-2. Roll out the pizza dough to the desired thickness.
-3. Place the dough on a baking sheet or pizza stone.
-4. Spread tomato sauce over the dough, leaving some space around the edges.
-5. Sprinkle mozzarella cheese over the tomato sauce.
-6. Bake the pizza in the preheated oven until the crust is golden brown and the cheese is melted and bubbly.
-7. Remove the pizza from the oven and let it cool for a few minutes.
-8. Slice the pizza and serve.  
-</p>
+<ol>
+  <li>Preheat the oven to a high temperature.</li>
+  <li>Roll out the pizza dough to the desired thickness.</li>
+  <li>Place the dough on a baking sheet or pizza stone.</li>
+  <li>Spread tomato sauce over the dough, leaving some space around the edges.</li>
+  <li>Sprinkle mozzarella cheese over the tomato sauce.</li>
+  <li>Bake the pizza in the preheated oven until the crust is golden brown and the cheese is melted and bubbly.</li>
+  <li>Remove the pizza from the oven and let it cool for a few minutes.</li>
+  <li>Slice the pizza and serve.</li>
+</ol><br>
 
 <h2>Hot N Cold 🤒 🧊 🔥</h2>
 
