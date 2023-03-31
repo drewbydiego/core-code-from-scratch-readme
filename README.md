@@ -4,14 +4,14 @@
 <h3>Solution</h3>
   <b>Flavor: cheese pizza.</b><br>
 Ingredients:
-<ol type=”A”>
+<ul>
   <li>Pizza dough</li>
   <li>Tomato sauce</li>
   <li>Mozzarella cheese</li>
   <li>Salt</li>
   <li>Olive oil</li>
-</ol><br>
-  <b>Preparation:</b><br>
+</ul><br>
+  <b>Preparation:</b>
 <ol>
   <li>Preheat the oven to a high temperature.</li>
   <li>Roll out the pizza dough to the desired thickness.</li>
