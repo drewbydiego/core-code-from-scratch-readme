@@ -42,3 +42,30 @@ Ingredients:
 </ol><br>
 
 <h2>Some geometry 📐</h2>
+<h3>Solution</h3><br>
+<b>Design an algorithm to calculate the volume of a pyramid, a cube and a sphere.</b>
+<ol>
+  <li>To calculate the volume of a pyramid:
+    <ul>
+      <li>Determine the base area of the pyramid (length x width).</li>
+      <li>Multiply the base area by the height of the pyramid.</li>
+      <li>Divide the result by 3.</li>
+      <li>The final number is the volume of the pyramid.</li>
+    </ul>
+  </li>
+  <li>To calculate the volume of a cube:
+    <ul>
+      <li>Measure one side of the cube.</li>
+      <li>Multiply the side length by itself twice (length x width x height).</li>
+      <li>The final number is the volume of the cube.</li>
+    </ul>
+  </li>
+  <li>To calculate the volume of a sphere:
+    <ul>
+      <li>Measure the radius of the sphere.</li>
+      <li>Cube the radius (multiply it by itself three times).</li>
+      <li>Multiply the result by 4/3 and by pi (3.14159).</li>
+      <li>The final number is the volume of the sphere.</li>
+    </ul>
+  </li>
+</ol>
