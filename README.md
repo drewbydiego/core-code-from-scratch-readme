@@ -127,7 +127,7 @@ The teacher knows that only those who studied would be telling the truth and tho
 
 <h2>Cereal vrs Milk 🥛</h2>
 <b>"Create an algorithm to prepare a bowl of cereal with milk. Represent the result in pseudocode and in a flowchart."</b>
-<h3>Solution</h3><br>
+<h3>Solution</h3>
 <h3>Pseudocode</h3><br>
 <ol>
   <li>Grab a clean bowl.</li>
@@ -138,4 +138,5 @@ The teacher knows that only those who studied would be telling the truth and tho
   <li>Enjoy your bowl of cereal and milk.</li>
 </ol>
 <h3>Flowchart</h3><br>
-![Cereal - milk -  Diagrama de flujo (1)](https://user-images.githubusercontent.com/76753050/231023142-8d5c7904-2a2a-41a7-8fb9-c0ba5accad33.png)
+<img width="300" alt="202836372-19159ef8-14d5-4ecf-b08c-819b05e79f81" src="https://user-images.githubusercontent.com/76753050/231023593-acc3948f-5f1e-4c50-9296-cf4a1aac21ed.png">
+
