@@ -1,4 +1,5 @@
 <h1># core-code-from-scratch-readme Algorithms - Week 1</h1>
+<h1>Week #1challenges</h1>
 <h1>Week challenges (Wednesday) 💻</h1>
 <h2>Let's make pizza 🍕</h2>
 <b>"Design an algorithm to prepare a pizza from scratch. Define the ingredients, what will be the flavor and the preparation."</b>
@@ -108,3 +109,33 @@ The message on the left chest says that the middle chest has a treasure, but we 
 The message on the middle chest says that all three chests have treasures, but since we know at least one message is false, this one must be false too. This means that at least one chest does not have a treasure, and since we already know the middle chest does not have a treasure, we can conclude that either the left or right chest has a treasure.<br><br>
 The message on the right chest says that only one chest has a treasure, but again, we know this is a lie. This means that either zero or two chests have a treasure.<br><br>
 After checking the posibilities on each chest, We can know that the middle chest does not have treasure but the other ones have, since "at least" one chest can have it We can choose the "A" or "C".
+
+<h1>Week #2 challenges</h1>
+<h1>Week challenges (Monday) 💻</h1>
+<h2>Logic problem 🎲</h2>
+<b>"The teacher asks his 5 students if they studied mathematics yesterday.<br><br>
+
+Alice: "Nobody studied math yesterday".<br>
+Bob: "1 person studied math yesterday".<br>
+Charlie: "2 people studied math yesterday".<br>
+Dan: "3 people studied mathematics yesterday".<br>
+Eva: "4 people studied mathematics yesterday".<br><br>
+
+The teacher knows that only those who studied would be telling the truth and those who didn't would be lying. Who is telling the truth?"</b>
+<h3>Solution</h3>
+<p>Out of the five students, only those who studied math yesterday would tell the truth, and those who didn't would lie. Alice's statement contradicts the rest, so it's false. Bob said one person studied math yesterday, which means Alice's statement is false, and someone did study. Charlie, Dan, and Eva's statements agree that more than one person studied math yesterday. Since three people cannot have studied math yesterday, Eva's statement is false, and two people studied math yesterday. Therefore, the only student telling the truth is Charlie, who said that two people studied math yesterday.</p>
+
+<h2>Cereal vrs Milk 🥛</h2>
+<b>"Create an algorithm to prepare a bowl of cereal with milk. Represent the result in pseudocode and in a flowchart."</b>
+<h3>Solution</h3><br>
+<h3>Pseudocode</h3><br>
+<ol>
+  <li>Grab a clean bowl.</li>
+  <li>Pour the desired amount of cereal into the bowl.</li>
+  <li>Grab the milk container from the fridge.</li>
+  <li>Pour the desired amount of milk into the bowl, over the cereal.</li>
+  <li>Take a spoon and mix the cereal and milk until they are well combined.</li>
+  <li>Enjoy your bowl of cereal and milk.</li>
+</ol>
+<h3>Flowchart</h3><br>
+![Cereal - milk -  Diagrama de flujo (1)](https://user-images.githubusercontent.com/76753050/231023142-8d5c7904-2a2a-41a7-8fb9-c0ba5accad33.png)
