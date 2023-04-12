@@ -146,13 +146,15 @@ Through a simple and intuitive pseudo-language in Spanish (complemented by a flo
 it allows you to focus your attention on the fundamental concepts of computational algorithms,
 minimizing the difficulties of a language and providing a work environment with numerous aids and teaching resources."</p>
 <h3>Solution</h3><br>
-![pseint](https://user-images.githubusercontent.com/76753050/231320816-11559c44-0a93-4fbb-8b84-0d4c7fffc809.png)
+<img width="500" alt="202836372-19159ef8-14d5-4ecf-b08c-819b05e79f81" src="https://user-images.githubusercontent.com/76753050/231320816-11559c44-0a93-4fbb-8b84-0d4c7fffc809.png">
 
 <h2>Print my name 🖨️</h2>
 <b>"This will be a guided challenge, the idea is for you to use PSeInt. For this challenge, we will print your name on the screen, a simple task that will help us to review the way PSeInt works."</b>
 <h3>Solution</h3><br>
-![imagen_2023-04-11_190948780](https://user-images.githubusercontent.com/76753050/231321329-cf22b358-52a2-4ba9-a5a7-fe2b5d49c1b5.png)
+<img width="500"500 alt="202836372-19159ef8-14d5-4ecf-b08c-819b05e79f81" src="https://user-images.githubusercontent.com/76753050/231321329-cf22b358-52a2-4ba9-a5a7-fe2b5d49c1b5.png">
+
 <h2>Print my name & age 🐱‍💻</h2>
 <b>"This challenge is similar to the previous guided challenge, but now you will try alone. For this challenge, you will need to create an algorithm in Pseudocode using PSeInt that prints your name and your age in separate lines, remeber that your name should be a string and your age a number"</b>
 <h3>Solution</h3><br>
-![Print my name   age](https://user-images.githubusercontent.com/76753050/231322027-09ebcd04-e1c6-489d-8c75-584acb083964.png)
+<img width="500" alt="202836372-19159ef8-14d5-4ecf-b08c-819b05e79f81" src="https://user-images.githubusercontent.com/76753050/231322027-09ebcd04-e1c6-489d-8c75-584acb083964.png">
+
