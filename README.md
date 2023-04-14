@@ -157,4 +157,24 @@ minimizing the difficulties of a language and providing a work environment with 
 <b>"This challenge is similar to the previous guided challenge, but now you will try alone. For this challenge, you will need to create an algorithm in Pseudocode using PSeInt that prints your name and your age in separate lines, remeber that your name should be a string and your age a number"</b>
 <h3>Solution</h3><br>
 <img width="500" alt="202836372-19159ef8-14d5-4ecf-b08c-819b05e79f81" src="https://user-images.githubusercontent.com/76753050/231322027-09ebcd04-e1c6-489d-8c75-584acb083964.png">
+<h1>Week challenges (Wednesday) 💻</h1>
+<h2>Algorithm game🐱‍</h2>
+<b>"This will be a fun challenge, you will be playing a game base on simple commands, and the idea is for you to help the squirrel to take the pine cone. For this challenge try to pass the first 15 levels. We wish you all the luck and happy gaming."</b>
+<h3>Solution</h3><br>
+<img width="500" alt="202836372-19159ef8-14d5-4ecf-b08c-819b05e79f81" src="https://user-images.githubusercontent.com/76753050/231916321-6b951322-5dd1-473c-adb5-1a811fbd2589.png">
 
+<h2>Mod 💻</h2>
+<b>"The challenge for you now is to create a PSeInt program that will receive a number from the user and add the mod operator using the even/odd case ( X % 2 ) where X is the user input"</b>
+<h3>Solution</h3><br>
+<img width="500" alt="202836372-19159ef8-14d5-4ecf-b08c-819b05e79f81" src="https://user-images.githubusercontent.com/76753050/231917408-afb7d832-d0e1-4930-944b-3b498a43b3fa.png">
+
+<h2>Register form 💻</h2>
+<b>"You are given the task to create a registration form for new users, this form should ask the user for the following information:"
+-First name<br>
+-Last name<br>
+-Age<br>
+-Email<br>
+-Address
+</b>
+<h3>Solution</h3><br>
+<img width="500" alt="202836372-19159ef8-14d5-4ecf-b08c-819b05e79f81" src="https://user-images.githubusercontent.com/76753050/231919514-833b459a-a9ae-4b53-8344-a9bd4d42b0a1.png">
