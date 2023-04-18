@@ -178,3 +178,80 @@ minimizing the difficulties of a language and providing a work environment with 
 </b>
 <h3>Solution</h3><br>
 <img width="500" alt="202836372-19159ef8-14d5-4ecf-b08c-819b05e79f81" src="https://user-images.githubusercontent.com/76753050/231919514-833b459a-a9ae-4b53-8344-a9bd4d42b0a1.png">
+<h1>Week challenges (Thursday) 💻</h1>
+<h2>Truth tables 🧑‍🏫</h2>
+<b>"You are going to learn about three main logical operations used in programming, these operations are called AND, OR, and NOT. Each of the operations uses booleans as operands, and when applying the operations a result is generated, which is also a boolean, this is easier to check using the Truth Tables for each of the operations, now your task is for you to learn, and add the Truth Tables for each of the operations add them to your README and check if the following operations are correct by answering ✅ or ❌ at the end of each operation"</b>
+<h3>Solution</h3><br>
+<ol>
+  <li>T & T = T ✅</li>
+  <li>T & F = F ✅</li>
+  <li>F & T = T ❌</li>
+  <li>F & F = F ✅</li>
+  <li>T | T = T ✅</li>
+  <li>T | F = F ❌</li>
+  <li>F | T = T ✅</li>
+  <li>F | F = F ✅</li>
+  <li>~T = T ❌</li>
+  <li>~F = T ✅</li>
+  <li>(T & F) | (~F) = T ✅</li>
+  <li>(T | F ) & (F | F) = T ❌</li>
+  <li>~((T | F ) & (F | F)) & F = F ✅</li>
+  <li>~((T | F ) & (F | F)) & T = T ✅</li>
+</ol>
+<h2>Boolean results ✍🏻</h2>
+<b>"You have been assigned to verify and explain a code created by one of your colleagues, the idea is that you can describe the value that each variable has within the code as well as what was done for each line. What is expected of you is that you add comments below each line showing the value that the variable would have and a short explanation of how that value is reached."</b><br>
+This is the code:<br><br>
+
+Algoritmo boolean<br>
+	a <- 5 == 3<br>
+	b <- 4 <> 3<br>
+	c <- 7 > 7<br>
+	d <- 4 < 4<br>
+	e <- 100 <= 90<br>
+	f <- 40 >= 40<br>
+FinAlgoritmo
+
+<h3>Solution</h3><br>
+Algoritmo boolean
+
+    a <- 5 == 3      // a = falso
+    // The '==' operator checks if the left and right operands are equal. Since 5 is not equal to 3, the value of a is false.
+    
+    b <- 4 <> 3      // b = verdadeiro
+    // The '<>' operator checks if the left and right operands are not equal. Since 4 is not equal to 3, the value of b is true.
+    
+    c <- 7 > 7       // c = falso
+    // The '>' operator checks if the left operand is greater than the right operand. Since 7 is not greater than 7, the value of c is false.
+    
+    d <- 4 < 4       // d = falso
+    // The '<' operator checks if the left operand is less than the right operand. Since 4 is not less than 4, the value of d is false.
+    
+    e <- 100 <= 90   // e = falso
+    // The '<=' operator checks if the left operand is less than or equal to the right operand. Since 100 is not less than or equal to 90, the value of e is false.
+    
+    f <- 40 >= 40    // f = verdadeiro
+    // The '>=' operator checks if the left operand is greater than or equal to the right operand. Since 40 is equal to 40, the value of f is true.
+    
+FinAlgoritmo
+<h2>Identify odd and even numbers👨🏻‍💻</h2>
+<b>"Remember the last challenge about the Mod operator? well, today your task will be to create a program that will be able to detect based on the user input if the number is odd or even. The process should be the following:"</b><br><br>
+
+1. The user enters a number
+2. Your algorithm detects if the number is odd or even (remember to use conditional statements Si...Entonces)
+3. Print ‘Número: x es par’ if the number is even (x is the number the user enters)
+4. Print ‘Número: x es impar’ if the number is odd (x is the number the user enters)
+<h3>Solution</h3><br>
+
+Algoritmo DetectarNumeroParImpar
+
+    Escribir "Por favor ingrese un número: "
+    Leer numero
+
+    Si numero % 2 == 0 Entonces
+        Escribir "Número: " , numero , " es par"
+    SiNo
+        Escribir "Número: " , numero , " es impar"
+    FinSi
+
+FinAlgoritmo
+<br><img src="https://user-images.githubusercontent.com/76753050/232912068-28b1c9bf-76cb-4ccf-a5f9-5cc055fc5f0f.gif" alt="Example GIF" width="450" height="250">
