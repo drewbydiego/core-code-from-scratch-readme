@@ -256,7 +256,7 @@ Algoritmo DetectarNumeroParImpar
 FinAlgoritmo
 <br><img src="https://user-images.githubusercontent.com/76753050/232912068-28b1c9bf-76cb-4ccf-a5f9-5cc055fc5f0f.gif" alt="Example GIF" width="450" height="250">
 <h1>Week #3 challenges</h1>
-<h1Week challenges (Monday) 💻</h1>
+<h1>Week challenges (Monday) 💻</h1>
 <h2>Simple calculator🖩</h2>
 <b>"For this challenge you will be performing a simple calculator, this calculator can perform the following operations:</b><br><br>
 1. Sum (+)<br>
@@ -329,3 +329,105 @@ FinAlgoritmo
 
 <h3>Solution</h3><br>
 <img src="https://user-images.githubusercontent.com/76753050/232918960-f95ee606-0615-42ca-acf4-538681dde1e4.gif" alt="Example GIF" width="450" height="250">
+<h1>Week challenges (Tuesday) 💻</h1>
+<h2>Simple calculator with Switch🖩</h2>
+<b>"For this challenge you will be performing a simple calculator using Switch (Segun), this calculator can perform the following operations:<br><br>
+
+1. Sum (+)
+2. Subtract (-)
+3. Multiplication (*)
+4. Division (/)</b><br><br>
+The calculator must ask the user for two numbers, after asking for the two numbers, you must ask for the operation to be performed, keep in mind that you must show the user the options available (+, -, *, /). The first thing that must be done is to validate that the operation that the user entered is valid, if it is not a valid option, the user must be shown an error message, for example: ⚠️ La operación no es valida and terminate the program. If the operation is valid, show the message: Procesando: <OPERACIÓN A REALIZAR> For, example: if the user has entered the numbers 10 and 15 as well as the operation *, the message should read: Procesando: 10 * 15. After this message the result of the operation must be displayed, following the previous example, the result of operating 10 * 15 is 150, so the program should return: Resultado: 150. Remember to use Switch (Segun) to identify which operations you should execute."
+<h3>Solution</h3><br>
+Algoritmo CalculadoraSwitch
+
+	Definir num1, num2, resultado como real
+	Definir operador como caracter
+	Escribir("Ingrese el primer número: ")
+	Leer num1
+	Escribir("Ingrese el segundo número: ")
+	Leer num2
+	Escribir("Ingrese el operador (+, -, *, /): ")
+	Leer operador
+	Si operador == '+' | operador == '-' | operador == '*' | operador == '/' Entonces
+	Segun operador Hacer
+		"+" :
+			resultado <- num1 + num2
+			Escribir"Procesando: ", num1, " , ", num2
+			Escribir"Resultado: ", resultado
+		"-" :
+			resultado <- num1 - num2
+			Escribir "Procesando: ", num1, " - ", num2
+			Escribir"Resultado: ", resultado
+		"*" :
+			resultado <- num1 * num2
+			Escribir "Procesando: ", num1, " * ", num2
+			Escribir"Resultado: ", resultado
+		"/" :
+			Si num2 = 0 Entonces
+				Escribir "¡No se puede dividir entre cero!"
+			Sino
+				resultado <- num1 / num2
+				Escribir "Procesando: ", num1, " / ", num2
+				Escribir"Resultado: ", resultado
+			FinSi
+	FinSegun 
+	SiNo
+	Escribir"¡La operación no es valida!"
+	fin si	
+FinAlgoritmo
+<br><img src="https://user-images.githubusercontent.com/76753050/232941836-c491d407-ae91-4db7-a72e-cbb609575448.gif" alt="Example GIF" width="450" height="250">
+<h2>Multi Option Program 🤳</h2>
+<b>"For this challenge you will create a program with multiple options using Switch (Segun), the options available are the following:<br><br>
+1. Sum two numbers
+2. Print the day of the week given the day number
+3. Print the length of a given text<br><br>
+This program must have a start menu where the user must select one of the previously described options. When the user selects each of the options, the program will perform the following:<br><br>
+
+1. Sum. The user enters two numbers and the result of the sum of both is printed<br>
+2. Print day of the week. The user enters a day of the week using numbers and the name of the day must be printed. For example, if the number 1 is entered, the program prints the text Lunes.<br>
+3. Calculate text length. The user enters a text and the length of the text should be printed. I was able to use the Pseint Longitud function to get the length.
+"</b>
+<h3>Solution</h3>
+Proceso Menuopciones
+
+    Escribir "Seleccione una opción:"
+    Escribir "1. Sumar dos números"
+    Escribir "2. Imprimir día de la semana"
+    Escribir "3. Calcular longitud de un texto"
+    Leer opcion
+	
+	Segun opcion Hacer
+		1:
+			Escribir "Ingrese el primer número:"
+            Leer num1
+            Escribir "Ingrese el segundo número:"
+            Leer num2
+            resultado = num1 + num2
+            Escribir "El resultado de la suma es:", resultado
+		2:
+			Escribir "Ingrese el número del día de la semana (1-7):"
+            Leer dia
+            Segun dia Hacer
+                1: Escribir "Lunes"
+                2: Escribir "Martes"
+                3: Escribir "Miércoles"
+                4: Escribir "Jueves"
+                5: Escribir "Viernes"
+                6: Escribir "Sábado"
+                7: Escribir "Domingo"
+                De Otro Modo:
+                    Escribir "Día no válido"
+            FinSegun
+		3:
+			Escribir "Ingrese un texto:"
+            Leer texto
+            longitudTexto = Longitud(texto)
+            Escribir "La longitud del texto es:", longitudTexto
+		De Otro Modo:
+			Escribir "Opción no válida"
+	Fin Segun
+FinProceso
+<br><img src="https://user-images.githubusercontent.com/76753050/232944050-35df939d-1782-402e-8a16-be17ab6fb830.gif" alt="Example GIF" width="450" height="250">
+
+
