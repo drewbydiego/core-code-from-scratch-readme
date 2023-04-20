@@ -431,3 +431,70 @@ FinProceso
 <br><img src="https://user-images.githubusercontent.com/76753050/232944050-35df939d-1782-402e-8a16-be17ab6fb830.gif" alt="Example GIF" width="450" height="250">
 
 
+<h1>Week challenges (Wednesday) 💻</h1>
+<h2>Multiplication Tables ✖️</h2>
+<b>"For this challenge you will create a program to calculate the multiplication tables for a given number using While (Mientras). The user must enter a number and then the multiplication table for the number must be printed."</b>
+<h3>Solution</h3><br>
+Algoritmo MultiplicationTable
+
+	Escribir "--TABLA DE MULTIPLICAR--"
+	Escribir "Ingresa un número, por favor."
+	Leer num
+	contador = 1
+	Escribir "Tabla del ", num
+	Mientras contador <=10 Hacer
+		Escribir num, " X ", contador, " = ", num * contador
+		
+		contador = contador + 1
+	Fin Mientras
+FinAlgoritmo
+<br><img src="https://user-images.githubusercontent.com/76753050/233231592-70ff3f56-247c-4451-837d-e33ab34bb2b2.gif" alt="Example GIF" width="450" height="250">
+<h2>Simple Calculator with Do While ❌</h2>
+<b>"For this challenge we are going to use the simple calculator that we made in the challenge 02 but now adding the functionality to perform a calculation again without finishing the program. The program should ask us if we want to use another operation and if the user answers yes then we can perform a new operation. To solve this challenge remember to use Do while (Repetir Hasta Que)."</b>
+<h3>Solution</h3><br>
+
+Algoritmo CalculadoraDoWhile
+
+	Definir num1, num2, resultado como real
+	Definir operador como caracter
+	Escribir "--CALCULADORA--"
+	Repetir
+	Escribir("Ingrese el primer número: ")
+	Leer num1
+	Escribir("Ingrese el segundo número: ")
+	Leer num2
+	Escribir("Ingrese el operador (+, -, *, /): ")
+	Leer operador
+	Si operador == '+' | operador == '-' | operador == '*' | operador == '/' Entonces
+		Segun operador Hacer
+			"+" :
+				resultado <- num1 + num2
+				Escribir"Procesando: ", num1, " , ", num2
+				Escribir"Resultado: ", resultado
+			"-" :
+				resultado <- num1 - num2
+				Escribir "Procesando: ", num1, " - ", num2
+				Escribir"Resultado: ", resultado
+			"*" :
+				resultado <- num1 * num2
+				Escribir "Procesando: ", num1, " * ", num2
+				Escribir"Resultado: ", resultado
+			"/" :
+				Si num2 = 0 Entonces
+					Escribir "¡No se puede dividir entre cero!"
+				Sino
+					resultado <- num1 / num2
+					Escribir "Procesando: ", num1, " / ", num2
+					Escribir"Resultado: ", resultado
+				FinSi
+		FinSegun 
+	SiNo
+		Escribir"¡La operación no es valida!"
+	fin si	
+	Escribir "¿Desea hacer otra operación?"
+	Leer respuesta
+	Hasta Que respuesta == 'No' | respuesta == 'no'
+
+FinAlgoritmo
+
+<br><img src="https://user-images.githubusercontent.com/76753050/233233247-6e51817d-e341-4d18-bf96-c40b57ecd5d5.gif" alt="Example GIF" width="450" height="250">
