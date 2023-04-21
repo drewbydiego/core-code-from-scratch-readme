@@ -498,3 +498,94 @@ Algoritmo CalculadoraDoWhile
 FinAlgoritmo
 
 <br><img src="https://user-images.githubusercontent.com/76753050/233233247-6e51817d-e341-4d18-bf96-c40b57ecd5d5.gif" alt="Example GIF" width="450" height="250">
+
+<h1>Week challenges (Thursday) 💻</h1>
+<h2>Multiplication Tables with For ✖️</h2>
+<b>"For this challenge you will create a program to calculate the multiplication tables for a given number using the For(Para) loop. The user must enter a number and then the multiplication table for the number must be printed."</b>
+<h3>Solution</h3><br>
+Algoritmo MultiplicationTableWithFor
+
+	Escribir "--TABLA DE MULTIPLICAR (PARA)--"
+	Escribir "Ingresa un número, por favor."
+	Leer num
+	Escribir "Tabla del ", num
+	Para contador desde 1 hasta 10 Hacer
+		Escribir num, " X ", contador, " = ", num * contador
+	FinPara
+FinAlgoritmo
+<br><img src="https://user-images.githubusercontent.com/76753050/233508693-3d5e3610-7b1f-482f-aaf9-46f7da5bd413.gif" alt="Example GIF" width="450" height="250">
+
+<h2>Ascending and Descending Numbers 🔢</h2>
+<b>"For this challenge we are going to print numbers in ascending or descending order. The user must enter a number, then he must enter if he wants to print the numbers in ascending or descending order. If the user chooses ascending, the numbers will be printed from the number 0 to the number entered, otherwise the numbers will be printed descending from the number entered to the number 0.To solve this challenge remember to use the For(Para) loop."</b>
+<h3>Solution</h3><br>
+Algoritmo AscendingDescending
+
+	Definir num, opcion como Entero
+	
+	Escribir "Ingrese un número:"
+	Leer num
+	
+	Escribir "¿Desea imprimir en orden ascendente o descendente?"
+	Escribir "(1 = Ascendente, 2 = Descendente)"
+	Leer opcion
+	
+	Si opcion = 1 Entonces
+		Escribir "Números en orden ascendente:"
+		Para i desde 1 hasta num Hacer
+			Escribir i
+		FinPara
+	SiNo
+		Escribir "Números en orden descendente:"
+		Para i desde num hasta 1 Hacer
+			Escribir i
+		FinPara
+		
+	FinSi
+FinAlgoritmo
+<br><img src="https://user-images.githubusercontent.com/76753050/233509661-20d25816-3f49-4362-86a9-99220994a917.gif" alt="Example GIF" width="450" height="250">
+
+<h2>Greetings 😀</h2>
+<b>"For this challenge, you need to create a program that prints a greeting based on an hour entered. The program should do the following:<br>
+<ul>
+  <li>Print Buenos dias! if the hour is from 0 to 12</li>
+  <li>Print Buenas tardes! if the hour is from 13 to 18</li>
+  <li>Print Buenas noches! if the hour is from 19 to 23</li>
+  <li>Ask the user if he wants to perform another greeting. If the answer is Si, the program must start again.</li>
+  <li>At the end of the program, print out the number of times the program has greeted."</li></ul></b>
+<h3>Solution</h3><br>
+
+
+Algoritmo Greeting
+
+	Definir hora como Entero
+	Definir continuar Como Caracter
+	contador = 0
+	
+	Repetir
+		Escribir "Ingrese la hora (0 a 23):"
+		Leer hora
+		
+		Si hora >= 0 & hora <= 12 Entonces
+			Escribir "Buenos dias!"
+		SiNo Si hora >= 13 & hora <= 18 Entonces
+				Escribir "Buenas tardes!"
+			SiNo Si hora >= 19 & hora <= 23 Entonces
+					Escribir "Buenas noches!"
+				SiNo
+					Escribir "Hora inválida."
+				FinSi
+			FinSi
+		FinSi
+		
+		Escribir "¿Desea realizar otro saludo? ¿Si/No?):"
+		Leer continuar
+		
+		contador = contador + 1
+		
+	Hasta Que continuar = 'No' | continuar ='no' | continuar = 'NO'
+	
+	Escribir "El programa ha saludado ", contador, " veces."
+FinAlgoritmo
+
+
+<br><img src="https://user-images.githubusercontent.com/76753050/233512281-bc563f03-fd06-4581-8a70-f8d36b7e5452.gif" alt="Example GIF" width="450" height="250">
