@@ -589,3 +589,70 @@ FinAlgoritmo
 
 
 <br><img src="https://user-images.githubusercontent.com/76753050/233512281-bc563f03-fd06-4581-8a70-f8d36b7e5452.gif" alt="Example GIF" width="450" height="250">
+
+<h1>Week #4 challenges</h1>
+<h1>Week challenges (Monday) 💻</h1>
+<h2>Average sales and commission 📟</h2>
+<b>"Make a program that asks how many sales the seller had, Once the number of sales is entered, ask for the value of each sale until all are entered, then return as a result the average value of sales, and the commission that the seller will take, If the seller had more than 5 sales, his commission will be 15% of the total value of the sales, if he sold 5 or less, his commission will be only 10%.</b>
+<h3>Solution</h3><br>
+Algoritmo SellerCommission
+	
+	Escribir "Enter the number of sales:"
+	Leer numSales
+	Cdata = ""
+
+	totalSales <- 0
+	Para i desde 1 hasta numSales hacer
+		Escribir "Enter the value of sale ", i, ":"
+		Leer saleValue
+		totalSales <- totalSales + saleValue
+	FinPara
+	
+
+	promedioVentas <- totalSales / numSales
+	Si numSales > 5 Entonces
+		comision <- 0.15 * totalSales
+		Cdata = "15%"
+	SiNo
+		comision <- 0.10 * totalSales
+		Cdata = "10%"
+	FinSi
+	
+	Escribir "Average value of sales:", promedioVentas
+	Escribir "Sellers commission:", comision
+	Escribir "Comission value ", Cdata
+	
+FinAlgoritmo
+
+<br><img src="https://user-images.githubusercontent.com/76753050/234150852-924f535f-2c70-45db-8f8d-e5eb67fff195.gif" alt="Example GIF" width="450" height="250">
+
+<h2>Even or odd 📟</h2>
+<b>"Request a number from 1 to 50, if the number is not between those values, report the error and request it again until you get a valid number, then it shows on the screen all the numbers from 1 to that number, if the number is even it only shows the even numbers, if it is odd it only shows the odd ones."</b>
+<h3>Solution</h3>
+Algoritmo EvenOddNumbers
+	
+	num <- 0
+	Mientras num < 1 |  num > 50 hacer
+		Escribir "Enter a number between 1 and 50:"
+		Leer num
+		Si num < 1 |  num > 50 Entonces
+			Escribir "Error Enter a number between 1 and 50!!!!"
+			Escribir "-----------------------------------------"
+		FinSi
+	FinMientras
+
+	Para i desde 1 hasta num hacer
+		Si num % 2 = 0 Entonces
+			Si i % 2 = 0 Entonces
+				Escribir i
+			FinSi
+		SiNo
+			Si i % 2 <> 0 Entonces
+				Escribir i
+			FinSi
+		FinSi
+	FinPara
+	
+FinAlgoritmo
+<br><img src="https://user-images.githubusercontent.com/76753050/234151731-90f340dd-b35c-4b84-bac8-298e97f48634.gif" alt="Example GIF" width="450" height="250">
+
