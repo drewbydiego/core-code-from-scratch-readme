@@ -656,3 +656,50 @@ Algoritmo EvenOddNumbers
 FinAlgoritmo
 <br><img src="https://user-images.githubusercontent.com/76753050/234151731-90f340dd-b35c-4b84-bac8-298e97f48634.gif" alt="Example GIF" width="450" height="250">
 
+<h1>Week challenges (Tuesday) 💻</h1>
+<h2>Full name 👾</h2>
+<b>"Make a program that takes a first name and a last name, then returns a string with both values ​​with the first letter uppercase and the rest lowercase."</b>
+<h3>Solution</h3><br>
+Algoritmo FullName
+	
+    Escribir "Ingrese su nombre:"
+    Leer nombre
+    Escribir "Ingrese su apellido:"
+    Leer apellido
+    
+	CapNombre = Mayusculas(Subcadena(nombre,0,0)) + Minusculas(Subcadena(nombre,1,Longitud(nombre)-1))
+	CapApellido = Mayusculas(Subcadena(apellido,0,0)) + Minusculas(Subcadena(apellido,1,Longitud(apellido)-1))
+    
+    Escribir "Su nombre formateado es: ", CapNombre , " " , CapApellido
+FinAlgoritmo
+<br><img src="https://user-images.githubusercontent.com/76753050/234734460-a5c622a1-27db-4c88-b2bc-f1f01e85c0b9.gif" alt="Example GIF" width="450" height="250">
+
+<h2>Throw dice👾</h2>
+<b>"make a program that simulates the roll of 2 dice 10 times, and display for each roll the values ​​of the two dice separated by a space, in case the 2 dice throw the same value in addition to the result, add a string to the ending that says "the dice are the same"</b>
+<h3>Solution</h3><br>
+Algoritmo RollDice
+	
+    Definir MIN_DADO Como Entero
+	MIN_DADO = 1
+    Definir MAX_DADO Como Entero
+	MAX_DADO = 6
+    Definir dadosIguales Como logico
+    
+    Para i = 1 Hasta 10 Con Paso 1 Hacer
+        dado1 = Aleatorio(MAX_DADO, MIN_DADO)
+        dado2 = Aleatorio(MAX_DADO, MIN_DADO)
+        
+        Si dado1 = dado2 Entonces
+            dadosIguales = Verdadero
+        Sino
+            dadosIguales = Falso
+        FinSi
+        
+        Escribir dado1, " ", dado2
+        Si dadosIguales Entonces
+            Escribir " - los dice son iguales"
+        FinSi
+		
+    FinPara
+FinAlgoritmo
+<br><img src="https://user-images.githubusercontent.com/76753050/234736131-25de97a0-7e89-4a49-a203-6b32ffcb8bc2.gif" alt="Example GIF" width="450" height="250">
