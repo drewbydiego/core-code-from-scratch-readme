@@ -703,3 +703,87 @@ Algoritmo RollDice
     FinPara
 FinAlgoritmo
 <br><img src="https://user-images.githubusercontent.com/76753050/234736131-25de97a0-7e89-4a49-a203-6b32ffcb8bc2.gif" alt="Example GIF" width="450" height="250">
+
+<h1>Week challenges (Wednesday) 💻</h1>
+<h2>Distance to zero "0"</h2>
+<b>"Make a program that asks for 5 values ​​and also allows us to know which one is furthest from zero, once obtained it returns that number (the numbers can be negative), showing only the integer part of the number."</b>
+<h3>Solution</h3><br>
+Algoritmo NumeroFurthest
+	
+    Definir NUM_VALORES Como Entero 
+	NUM_VALORES = 5
+    Definir maxDistancia Como Real 
+	maxDistancia = 0
+    Definir numFurthest Como Real 
+	numFurthest= 0
+    
+    Para i = 1 Hasta NUM_VALORES Con Paso 1 Hacer
+        Escribir "Enter the value ", i, ": "
+        Leer valor
+
+        distancia = Abs(valor)
+        
+        Si distancia > maxDistancia Entonces
+            maxDistancia = distancia
+            numFurthest = valor
+        FinSi
+    FinPara
+
+    Escribir "The furthest value from zero is: ", Redon(numFurthest)
+FinAlgoritmo
+<br><img src="https://user-images.githubusercontent.com/76753050/234737585-3e9b0f58-3e45-4ece-b423-c915fcbe85bb.gif" alt="Example GIF" width="450" height="250">
+
+<h2>Toss coin 🪙</h2>
+<b>"From the data we receive first a name and a value, then another name and another value, using the built-in function aleatorio() we simulate the flip of a coin, We must return the name of the winner in capital letters and the value I win, to avoid cheating, if a player puts a value of zero or negative, the opponent automatically wins, in case both cheat, "game canceled" is returned."</b>
+<h3>Solution</h3><br> 
+Algoritmo TossCoin
+
+    Definir nombre1, nombre2 Como Cadena
+    Definir valor1, valor2, resultado Como Real
+    
+    Escribir "Enter the players name 1"
+    Leer nombre1
+    Escribir "Write the value of ", nombre1, ": "
+    Leer valor1
+
+    Escribir "Enter the players name 2"
+    Leer nombre2
+    Escribir "Write the value of ", nombre2, ": "
+    Leer valor2
+    
+    Si valor1 <= 0 Entonces
+        resultado = valor2
+        Escribir Mayusculas(nombre2), " has won by cheating with a value of ", resultado
+    Sino Si valor2 <= 0 Entonces
+			resultado = valor1
+			Escribir Mayusculas(nombre1), " has won by cheating with a value of ", resultado
+		Sino
+
+			moneda = Aleatorio(0,1)
+	
+			Si valor1 > valor2 Entonces
+				Si moneda = 0 Entonces
+					resultado = valor1
+					Escribir Mayusculas(nombre1), " has won with a value of ", resultado
+				Sino
+					resultado = valor2
+					Escribir Mayusculas(nombre2), " has won with a value of ", resultado
+				FinSi
+			Sino Si valor2 > valor1 Entonces
+					Si moneda = 0 Entonces
+						resultado = valor2
+						Escribir Mayusculas(nombre2), " has won with a value of ", resultado
+					Sino
+						resultado = valor1
+						Escribir Mayusculas(nombre1), " has won with a value of ", resultado
+					FinSi
+				Sino
+					Escribir "The game has been cancelled due to cheating by both players."
+				FinSi
+			FinSi
+		FinSi
+	FinSi
+FinAlgoritmo
+
+<br><img src="https://user-images.githubusercontent.com/76753050/234740873-e7081d87-2780-438e-a780-6583d8a2beb5.gif" alt="Example GIF" width="450" height="250">
+
