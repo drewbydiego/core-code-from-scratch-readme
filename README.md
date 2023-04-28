@@ -787,3 +787,68 @@ FinAlgoritmo
 
 <br><img src="https://user-images.githubusercontent.com/76753050/234740873-e7081d87-2780-438e-a780-6583d8a2beb5.gif" alt="Example GIF" width="450" height="250">
 
+<h1>Week challenges (Thursday) 💻</h1>
+<h2>Total price 🪙</h2>
+<b>"Create a function called TotalPrice that takes 2 parameters, price and VAT, and returns the price including VAT. if the price exceeds 3000 a 10 percent discount is made on the total price.</b>
+<h3>Solution</h3><br>
+Algoritmo ProgramTotalPrice
+	
+    Definir price, vat, pTotal Como Real
+	
+    price <- 5000
+    vat <- 21
+	
+    pTotal <- TotalPrice(price, vat)
+	
+    Escribir "The total price with VAT is: ", pTotal
+FinAlgoritmo
+
+
+Funcion value <- TotalPrice(price, vat)
+	Definir discount, priceWVat Como Real
+	
+	priceWVat <- price + (price * vat / 100)
+	
+	Si price > 3000 Entonces
+		discount <- priceWVat * 0.1
+		priceWVat <- priceWVat - discount
+	FinSi
+	
+	value <- priceWVat
+	
+FinFuncion
+
+<br><img src="https://user-images.githubusercontent.com/76753050/235031506-bfe6bf0e-7874-4610-96e3-a8ba298411e2.gif" alt="Example GIF" width="450" height="250">
+
+<h2>Reverse direction and size 👨🏻‍💻</h2>
+<b>"Create a function called ReverseDirectionAndSize that takes some text as a parameter and reverses it, eg: "Hello" -> "olleH" and also reverses the letters if they are uppercase to lowercase and if they are lowercase to uppercase, it should do something. like this:<br><br>
+
+"HelLO" --> "olLEh"<br>
+
+"Leonardo" --> "ODRANOEl"<br>
+
+"Text" --> "TXEt""</b><br>
+<h3>Solution</h3><br>
+Algoritmo Directiontext
+
+	Imprimir Reverse("Leonardo")
+FinAlgoritmo
+
+Funcion result <- Reverse (ctext)
+
+	Definir result Como Caracter;
+	result = "";
+	Para nChar = Longitud(ctext) - 1 Hasta 0 Con Paso -1 Hacer
+		xChar = Subcadena(ctext, nChar, nChar);
+		SI xChar = Mayusculas(xChar) Entonces
+			xChar = Minusculas(xChar)
+		SiNo
+			xChar = Mayusculas(xChar)
+		FinSi
+		result = Concatenar(result, xChar)
+	FinPara
+Fin Funcion
+
+<br><img src="https://user-images.githubusercontent.com/76753050/235034381-e5243f59-84ea-4e00-8161-ee44e85c05fc.gif" alt="Example GIF" width="450" height="250">
+
+
