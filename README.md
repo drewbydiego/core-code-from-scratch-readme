@@ -851,4 +851,137 @@ Fin Funcion
 
 <br><img src="https://user-images.githubusercontent.com/76753050/235034381-e5243f59-84ea-4e00-8161-ee44e85c05fc.gif" alt="Example GIF" width="450" height="250">
 
+<h1>Week #5 challenges</h1>
+<h1>Week challenges (Monday) 💻</h1>
+<h2>Time Converter 📟</h2>
+<b>"Create a function called timeConverter that receives a positive number of seconds and returns a string based on the number. "Days: 1, Hours: 5, Minutes: 40 and seconds: 5"<br><br>
+
+4000 --> "days: 0, hours: 1, minutes: 6, and seconds: 4"<br>
+
+40000 --> "days: 0, hours: 11, minutes: 6, and seconds: 4"<br>
+
+150000 --> "days: 1, hours: 17, minutes: 40, and seconds: 0""</b><br>
+<h3>Solution</h3><br>
+Algoritmo timeConverterProgram
+
+	Escribir "Write the a positive number of seconds"
+	Leer seconds
+	timeConverter(seconds)
+FinAlgoritmo
+![time converter](https://user-images.githubusercontent.com/76753050/235818478-e6057ec2-358b-4058-a3c0-0327e9122400.gif)
+
+Funcion timeConverter(seg)
+
+    Definir dias, horas, minutos, segundos Como real
+	dias = trunc(seg / 86400)
+    horas <- trunc((seg % 86400) / 3600)
+    minutos <- trunc((seg % 3600) / 60)
+
+    segundos <- trunc(seg % 60)
+
+    Escribir  "Days: " + ConvertirATexto(dias) + ", Hours: " + ConvertirATexto(horas) + ", Minutes: " + ConvertirATexto(minutos) + " and seconds: " + ConvertirATexto(segundos)
+FinFuncion
+
+<br><img src="https://user-images.githubusercontent.com/76753050/235818503-59d8bcc8-3a47-4a01-b0cc-1f0d82e1f91c.gif" alt="Example GIF" width="450" height="250">
+
+<h2>Compare distances 😵‍💫</h2>
+<b>"Create a function called compareDistances that asks for 5 numbers, these can be positive or negative, add the positives with positives and negatives with negatives, the function should return true if there is more distance to 0 with positives or false if the distance is greater with negatives.<br><br>
+
+4, 12 , 100, 8, -60 --> true<br>
+
+40, 120 , 10, -80, -91 --> false"</b><br>
+<h3>Solution</h3><br>
+
+Algoritmo timeConverterProgram
+
+	compareDistances() 
+FinAlgoritmo
+
+
+Funcion compareDistances()
+
+    Definir num, sumPos, sumNeg Como Real
+	sumPos = 0
+	sumNeg = 0
+    Escribir "Enter five numbers:"
+    
+    Para i <- 1 Hasta 5 Con Paso 1 Hacer
+        Leer num
+        Si num >= 0 Entonces
+            sumPos <- sumPos + num
+        Sino
+            sumNeg <- sumNeg + num
+        FinSi
+    FinPara
+    
+    Si Abs(sumPos) > Abs(sumNeg) Entonces
+        Escribir  Verdadero
+    Sino
+        Escribir  Falso
+    FinSi
+FinFuncion
+
+<br><img src="https://user-images.githubusercontent.com/76753050/235819296-1cd91e79-ab58-4fe0-a888-07891ead8e9a.gif" alt="Example GIF" width="450" height="250">
+
+<h1>Week challenges (Tuesday) 💻</h1>
+<h2>Sum of pairs ➕</h2>
+<b>"write a function called sumOfPairs that asks for a number from 1 to 100 indefinitely, if a negative number or greater than 100 is entered, it stops asking for more numbers and returns the sum of all the even numbers entered.<br><br>
+
+4, 12 , 100, 11, -60 --> 116<br>
+
+40, 121 --> 40"</b><br>
+<h3>Solution</h3><br>
+
+Algoritmo pairs
+
+	sumOfPairs()
+FinAlgoritmo
+
+Funcion sumOfPairs()
+
+    Definir sum, num Como Entero
+    sum = 0
+    num = 0
+    
+    Repetir
+        Escribir "Ingrese un número entre 1 y 100: "
+        Leer num
+        Si num > 0 & num <= 100 Entonces
+            Si num % 2 = 0 Entonces
+                sum = sum + num
+            FinSi
+        Sino
+        FinSi
+    Hasta Que num < 1 | num > 100
+    
+    Escribir  sum
+FinFuncion
+<br><img src="https://user-images.githubusercontent.com/76753050/235820501-e6f1d85f-6409-4e64-878e-8b1072e693ce.gif" alt="Example GIF" width="450" height="250">
+
+<h2>Mid point 🐦‍⬛</h2>
+<b>"write a function called midpoint that given 2 values ​​(can be negative) does not return the value of the midpoint between them<br><br>
+
+-50,50 --> 0<br>
+
+40, 80 --> 60"<br></b>
+<h3>Solution</h3><br>
+
+Algoritmo Mpoint
+
+	Escribir "Write number 1"
+	leer v1
+	Escribir "Write number 2"
+	leer v2
+	midpoint(v1, v2)
+FinAlgoritmo
+
+Funcion midpoint(valor1, valor2)
+
+    Definir punto_medio Como Real
+    punto_medio = (valor1 + valor2) / 2
+    
+    Escribir  punto_medio
+FinFuncion
+
+<br><img src="https://user-images.githubusercontent.com/76753050/235820980-f6dd698e-8ad9-46da-8f07-a29f17c02c0f.gif" alt="Example GIF" width="450" height="250">
 
