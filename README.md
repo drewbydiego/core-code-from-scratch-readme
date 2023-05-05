@@ -985,3 +985,95 @@ FinFuncion
 
 <br><img src="https://user-images.githubusercontent.com/76753050/235820980-f6dd698e-8ad9-46da-8f07-a29f17c02c0f.gif" alt="Example GIF" width="450" height="250">
 
+<h1>Week challenges (Wednesday) 💻</h1>
+<h2>Cashier 👩‍💻</h2>
+<h3>Solution</h3><br>
+
+Proceso cashier
+
+    Definir balance, Tbalance Como Entero
+    balance <- 1000
+    opcion <- ""
+	
+    Mientras opcion <> "c" Hacer
+        Escribir "select an option: a. to deposit. b. withdraw. c. go out."
+        Leer opcion
+		
+        Si opcion = "a" Entonces
+            balance = deposit(balance)
+			Sino Si opcion = "b" Entonces
+			balance = withdraw(balance)
+        FinSi
+	finsi
+    FinMientras
+	Escribir "Your balance is: ", balance
+
+FinProceso
+
+Funcion Tbalance <- deposit (balance)
+
+		Definir amount Como Entero
+		Escribir "how much do you want to deposit:"
+		Leer amount
+		balance <- balance + amount
+		Tbalance <- balance
+		Escribir  Tbalance
+
+FinFuncion
+
+Funcion Tbalance <- withdraw(balance)
+
+		Definir amount Como Entero
+		Escribir "how much do you want to withdraw:"
+		Leer amount
+		Tbalance <- balance - amount
+		Escribir Tbalance
+FinFuncion
+
+
+<br><img src="https://user-images.githubusercontent.com/76753050/236361551-abc62f0e-2f4b-4fb5-bde2-b7b9d4371495.gif" alt="Example GIF" width="450" height="250">
+
+
+<h2>Weather average ☁️"</h2>
+<b>"write an algorithm that loops indefinitely until 'x' is entered which will calculate an average of the weather, note that for each value entered it should ask if it is fahrenheit or celsius, then ask for the value. add everything up and divide by the number of values ​​entered. The result must be returned in celsius, have a function that, in case fahrenheit is entered, transforms it to celsius in order to add them."</b>
+<h3>Solution</h3><br>
+
+Algoritmo Weather
+
+	Definir count Como Entero 
+	count = 0
+	Definir total Como Real 
+	total = 0
+	Definir option Como Caracter
+	option = ""
+	Mientras option <> "x" Hacer
+		Escribir "a. Enter degrees Celsius."
+		Escribir "b. Enter degrees Fahrenheit."
+		Escribir "x. Exit."
+		Leer option
+		
+		Segun option Hacer
+			"a", "b": 
+				Imprimir "Enter temperature:"
+				Leer degree
+				count = count + 1
+				Segun option Hacer
+					"a": total = total + degree
+					"b": total = total + fahrenheitToCelsius(degree)
+				FinSegun
+			"x": 
+			De Otro Modo: Imprimir "Try a different option"
+		FinSegun
+	FinMientras
+	
+	Imprimir "The average temperature is ", total / count, " degrees Celsius."
+FinAlgoritmo
+
+Funcion celsius <- fahrenheitToCelsius(fahrenheit)
+
+	Definir celsius Como Real
+	celsius = (fahrenheit - 32) * 9/5
+Fin Funcion
+
+<br><img src="https://user-images.githubusercontent.com/76753050/236366180-bbd3fa15-b880-4fa9-ad1b-98e5f3f9450d.gif" alt="Example GIF" width="450" height="250">
+
