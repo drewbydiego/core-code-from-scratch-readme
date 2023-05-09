@@ -1077,3 +1077,71 @@ Fin Funcion
 
 <br><img src="https://user-images.githubusercontent.com/76753050/236366180-bbd3fa15-b880-4fa9-ad1b-98e5f3f9450d.gif" alt="Example GIF" width="450" height="250">
 
+<h1>Week challenges (Thursday) 💻</h1>
+<h2>'IF' statement in JavaScript 🤓</h2>
+<b>"Create an if statement with the JavaScript syntax"</b>
+<h3>Solution</h3>
+
+```
+
+"use strict";
+
+let number1, number2;
+
+number1 = 30;
+number2 = 20;
+
+if (number1 > number2) {
+    console.log("The number " + number1 + " is greater than " + number2)
+}else{
+    console.log("The number " + number1 + " is not greater than " + number2)
+}
+
+```
+
+<h2>'WHILE' loop in JavaScript 🤓</h2>
+<b>"Create a while loop statement with the JavaScript syntax"</b>
+<h3>Solution</h3>
+
+
+~~~
+
+"use strict";
+
+let i = 0;
+
+while (i <= 10) {
+    console.log(i);
+    i++;
+}
+
+
+~~~
+
+
+
+
+<br><img src="https://user-images.githubusercontent.com/76753050/236970553-bfe28a16-1a81-41a9-a5ed-80bc7235842a.png" alt="Example GIF" width="450" height="250">
+
+<h2>''FOR' loop in JavaScript 🤓</h2>
+<b>"Create a while loop statement with the JavaScript syntax"</b>
+<h3>Solution</h3>
+
+
+~~~
+
+"use strict";
+
+let number = 6;
+for (let i = 1; i <=10; i++) {
+    console.log(number + " X " + i + " = " + number*i);
+}
+
+
+~~~
+
+
+
+
+<br><img src="https://user-images.githubusercontent.com/76753050/236971355-022486a9-ae18-40e8-848e-7cf303b1c825.png" alt="" width="450" height="250">
+
