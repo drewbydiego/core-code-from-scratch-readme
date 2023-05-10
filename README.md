@@ -1145,3 +1145,72 @@ for (let i = 1; i <=10; i++) {
 
 <br><img src="https://user-images.githubusercontent.com/76753050/236971355-022486a9-ae18-40e8-848e-7cf303b1c825.png" alt="" width="450" height="250">
 
+<h1>Week #6 challenges</h1>
+<h1>Week challenges (Tuesday) 💻</h1>
+<h2>Variables 🤖</h2>
+<b>"Declare a variable firstname and initialize it with the value 'Lata'."</b>
+<h3>Solution</h3>
+
+
+~~~
+
+"use strict";
+
+let firstname;
+firstname = 'Lata';
+
+~~~
+
+
+<h2>What is x? X</h2>
+<b>"Which value does x have after execution of the following code?
+<br>let x = 'Geeta';"</b>
+<h3>Solution</h3>
+
+
+~~~
+
+'Geeta'
+
+~~~
+
+<h2>Several variables 🥋🏻</h2>
+<b>"Several variables are declared and initialized in 2 program lines:<br>
+let city = 'Lubumbashi';<br>
+let country = 'Congo';<br><br>
+Declare a variable flower and assign it the value 'rose'. Declare a second variable tree and assign it the value 'maple'."</b>
+<h3>Solution</h3>
+
+
+~~~
+"use strict";
+
+let flower = "rose";
+let tree = "maple";
+~~~
+
+<h2>Reassignment 🥋</h2>
+<b>"Which value does x have after execution of the following code?
+let x = 'Tic';<br>
+x = 'Tac';<br>
+x = 'Toe';"</b>
+<h3>Solution</h3>
+
+
+~~~
+'Toe'
+~~~
+
+<h2>Assign variables 🥋</h2>
+<b>"Which value does x have after execution of the following code?
+let x = 'Laurel';<br>
+let y = 'Hardy';<br>
+let z = y;<br>
+y = x;<br>
+x = z;"</b>
+<h3>Solution</h3>
+
+
+~~~
+'Hardy'
+~~~
