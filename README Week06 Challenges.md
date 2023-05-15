@@ -161,3 +161,119 @@ console.log(echo('CO2'));
 
 
 ![image](https://github.com/drewbydiego/core-code-from-scratch-readme/assets/76753050/90d15c5a-03f1-4eb0-a5bd-aa32f655d647)
+
+
+<h1>Week challenges (Thursday) 💻</h1>
+<h2>Strings 🧵</h2>
+<b>"Write a function greet having one parameter and returning 'Hello <parameter>!'.<br><br>
+
+Example: greet('Ada') should return 'Hello Ada!' and greet('Grace') should return 'Hello Grace!'."</b>
+<h3>Solution</h3>
+
+    
+~~~
+
+    
+"use strict";
+
+function greeting(x) {
+    return 'Hello ' + x;
+  }
+
+  console.log(greeting("Diego"));
+
+
+~~~
+    
+![image](https://github.com/drewbydiego/core-code-from-scratch-readme/assets/76753050/b1cea5f5-4a4f-4b0d-884d-288b3f128248)
+
+ <h2>String: length 🧵</h2>
+<b>"Write a function length that takes a string and returns the number of characters of the string.<br><br>
+
+Example: length('sun') should return 3."</b>
+<h3>Solution</h3>
+
+    
+~~~
+
+    
+"use strict";
+
+function getLength(x){
+    return x.length;
+}
+
+console.log(getLength("Diego Flores"));
+
+
+~~~
+    
+![image](https://github.com/drewbydiego/core-code-from-scratch-readme/assets/76753050/88469e46-47f2-4c7a-9a6b-4753e535464f)
+
+ <h2>String: toUpperCase() 🧵</h2>
+<b>"Write a function toCase that takes a string and returns that string in lowercase and uppercase with - as delimiter.<br><br>
+
+Example: toCase('Mthatha') should return 'mthatha-MTHATHA'."</b>
+<h3>Solution</h3>    
+
+~~~
+
+    
+"use strict";
+
+function toCase(x) {
+    return x.toLowerCase() + ' ' + x.toUpperCase();
+  }
+
+  console.log(toCase("diego"));
+
+
+~~~
+    
+ ![image](https://github.com/drewbydiego/core-code-from-scratch-readme/assets/76753050/007b5a70-4a76-48c5-8479-92ca393e44f7)
+
+    
+<h2>String: charAt() 🧵</h2>
+<b>"Write a function shortcut that takes two strings and returns the initial letters of theses strings.<br><br>
+
+Example: shortcut('Amnesty', 'International') should return 'AI'."</b>
+<h3>Solution</h3>    
+    
+~~~
+
+    
+"use strict";
+
+  function scut(text1, text2) {
+    return text1.charAt(0) + text2.charAt(0);
+  }
+
+  console.log(scut("Diego", "Flores"));
+
+~~~
+    
+ ![image](https://github.com/drewbydiego/core-code-from-scratch-readme/assets/76753050/38a63168-8e7d-4930-9261-bae9c7254804)
+   
+<h2>String: indexOf() 🧵</h2>
+<b>"Write a function indexOfIgnoreCase taking two strings and determining the first occurrence of the second string in the first string. The function should be case insensitive.
+<br><br>
+Example: indexOfIgnoreCase('bit','it') and indexOfIgnoreCase('bit','IT') should return 1."</b>
+<h3>Solution</h3>     
+    
+~~~
+
+    
+"use strict";
+
+  function indexOfIgnoreCase(str1, str2) {
+    const lowercaseStr1 = str1.toLowerCase();
+    const lowercaseStr2 = str2.toLowerCase();
+    return lowercaseStr1.indexOf(lowercaseStr2);
+  }
+  
+  console.log(indexOfIgnoreCase('bit', 'it')); 
+
+~~~
+    
+ ![image](https://github.com/drewbydiego/core-code-from-scratch-readme/assets/76753050/64e269f3-fcf9-47b0-a619-5a35781a6789)
+   
