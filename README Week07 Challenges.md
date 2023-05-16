@@ -60,14 +60,50 @@ x--;"</b>
 x = 7
 ~~~
 
-<h2>String: substr() 🤖</h2>
-<b>"Write a function firstWord, taking a string and returning the first word in that string. The first word are all characters up to the first space.<br><br>
+<h2>Fahrenheit 🤖</h2>
+<b>"Write a function toFahrenheit that converts a temperature from Celsius to Fahrenheit.<br><br>
 
-Example: firstWord('see and stop') should return 'see'."</b>
+Example: toFahrenheit(0) should return 32."</b>
 <h3>Solution</h3>
 
 
 ~~~
 
+  function toFahrenheit(celsius) {
+    const fahrenheit = (celsius * 9/5) + 32;
+  
+    return fahrenheit;
+  }
+
+  console.log(toFahrenheit(0));
+  
+~~~
+
+![image](https://github.com/drewbydiego/core-code-from-scratch-readme/assets/76753050/0bc0e885-66f8-44fe-998e-686be5a72af2)
+
+<h2>Boolean 🤖</h2>
+<b>"Write a function nand that takes two Boolean values. If both values are true, the result should be false. In the other cases the return should be true.<br><br>
+
+I.e.: The call nand(true, true) should return false. The calls nand(true, false), nand(false, true) and nand(false, false) should return true.
+"</b>
+<h3>Solution</h3>
+
 
 ~~~
+
+  function nand(a, b) {
+    if (a === true && b === true) {
+      return false;
+    }
+
+    return true;
+  }
+  
+  console.log(nand(true, true));
+  console.log(nand(true, false)); 
+  console.log(nand(false, true)); 
+  console.log(nand(false, false)); 
+  
+~~~
+
+![image](https://github.com/drewbydiego/core-code-from-scratch-readme/assets/76753050/1640e4a7-cdb0-460b-b40a-4b98d4c9801a)
