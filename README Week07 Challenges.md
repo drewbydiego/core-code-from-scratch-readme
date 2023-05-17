@@ -163,3 +163,60 @@ var rooms = {
 <h3>Solution</h3>
 <img src="https://github.com/drewbydiego/core-code-from-scratch-readme/assets/76753050/f20aa97f-65b3-41b7-afeb-f68fba7de9fc" alt="" width="600" height="300">
 
+<h1>Week challenges (Wednesday) 💻</h1>
+<h2>Count strings in objects 🤖 - Codewars</h2>
+<b>"Create a function strCount (takes an object as argument) that will count all string values inside an object. For example:"</b>
+
+
+~~~
+
+strCount({
+  first: "1",
+  second: "2",
+  third: false,
+  fourth: ["anytime",2,3,4],
+  fifth:  null
+  })
+  //returns 3
+  
+~~~
+
+<h3>Solution</h3>
+<img src="https://github.com/drewbydiego/core-code-from-scratch-readme/assets/76753050/4dc28988-ba45-4401-807f-629652b8efb2" alt="" width="600" height="300">
+
+<h2>Extending JavaScript Objects: Get First & Last Array Element 🤖 - Codewars</h2>
+<b>"Your task is to extend JavaScript Array object, with methods .first() and .last(), so you can get respectively first or last element of the array.<br><br>
+
+~~~
+    
+var a = [2, 5, 7, 3 ,4];
+
+a.first();  // 2
+a.last();   // 4
+    
+~~~
+    
+Note: in case of empty array, methods should return undefined."</b>
+
+
+<h3>Solution</h3>
+<img src="https://github.com/drewbydiego/core-code-from-scratch-readme/assets/76753050/4bffcb02-2d05-4afb-b2e2-d3d8f014f586" alt="" width="600" height="300">
+
+<h2>Object Oriented Piracy 🤖 - Codewars</h2>
+<b>"You have access to the ship "draft" and "crew". "Draft" is the total ship weight and "crew" is the number of humans on the ship.<br><br>
+
+Each crew member adds 1.5 units to the ship draft. If after removing the weight of the crew, the draft is still more than 20, then the ship is worth looting. Any ship weighing that much must have a lot of booty!"</b>
+
+
+~~~
+
+function Ship(draft,crew) {
+ this.draft = draft;
+ this.crew = crew;
+}
+  
+~~~
+
+<h3>Solution</h3>
+<img src="https://github.com/drewbydiego/core-code-from-scratch-readme/assets/76753050/1b309844-8d64-4d2a-a298-7ba366405fc9" alt="" width="600" height="300">
+
