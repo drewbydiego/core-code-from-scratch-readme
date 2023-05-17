@@ -107,3 +107,59 @@ I.e.: The call nand(true, true) should return false. The calls nand(true, false)
 ~~~
 
 ![image](https://github.com/drewbydiego/core-code-from-scratch-readme/assets/76753050/1640e4a7-cdb0-460b-b40a-4b98d4c9801a)
+
+<h1>Week challenges (Tuesday) 💻</h1>
+<h2>Objects 🤖 - Codewars</h2>
+<b>"Task Give you a function animal, accept 1 parameter:obj like this:<br><br>
+
+{name:"dog",legs:4,color:"white"}<br>
+and return a string like this:<br><br>
+
+'This white dog has 4 legs.'"</b>
+<h3>Solution</h3>
+<img src="https://github.com/drewbydiego/core-code-from-scratch-readme/assets/76753050/abf9632a-848b-414f-b04e-87b8294ad0e1" alt="" width="600" height="300">
+
+<h2>Return to sanity 🤖 - Codewars</h2>
+<b>"This function should return an object, but it's not doing what's intended. What's wrong?"<br><br></b>
+
+~~~
+
+function mystery(sanity) {
+    var results =
+      {sanity: 'Hello'};
+    return
+      results;
+  }
+  
+~~~
+
+<h3>Solution</h3>
+<img src="https://github.com/drewbydiego/core-code-from-scratch-readme/assets/76753050/4fd6f8a2-87a3-4522-8e93-ab09a41b9ebb" alt="" width="600" height="300">
+
+<h2>Object syntax debug 🤖 - Codewars</h2>
+<b>"While making a zork-type game, you create an object of rooms. Unfortunately, the game is not working. Find all of the errors in the rooms object to get your game working again."</b>
+
+
+~~~
+
+var rooms = {
+  first: {
+    description: 'This is the first room'
+    items: {
+      chair: 'The old chair looks comfortable',
+      lamp: 'This lamp looks ancient'
+  },
+  second: {
+    description: 'This is the second room'
+    items: {
+      couch: 'This couch looks like it would hurt your back,
+      table: 'On the table there is an unopened bottle of water'
+    }
+  }
+}
+  
+~~~
+
+<h3>Solution</h3>
+<img src="https://github.com/drewbydiego/core-code-from-scratch-readme/assets/76753050/f20aa97f-65b3-41b7-afeb-f68fba7de9fc" alt="" width="600" height="300">
+
