@@ -220,3 +220,83 @@ function Ship(draft,crew) {
 <h3>Solution</h3>
 <img src="https://github.com/drewbydiego/core-code-from-scratch-readme/assets/76753050/1b309844-8d64-4d2a-a298-7ba366405fc9" alt="" width="600" height="300">
 
+
+<h1>Week challenges (Thursday) 💻</h1>
+<h2>Convert a String to a Number! 🥋 - Codewars</h2>
+<b>"We need a function that can transform a string into a number. What ways of achieving this do you know?<br><br>
+
+Note: Don't worry, all inputs will be strings, and every string is a perfectly valid representation of an integral number."</b>
+<h3>Solution</h3>
+
+<img src="https://github.com/drewbydiego/core-code-from-scratch-readme/assets/76753050/7cfaef54-84d3-4627-a940-43403dbe5aca" alt="" width="600" height="300">
+
+~~~
+
+const stringToNumber = function(str) {
+  return parseInt(str);
+};
+
+  
+~~~
+
+<h2>Convert number to reversed array of digits 🥋 - Codewars</h2>
+<b>"Given a random non-negative number, you have to return the digits of this number within an array in reverse order."</b>
+<h3>Solution</h3>
+<img src="https://github.com/drewbydiego/core-code-from-scratch-readme/assets/76753050/5f868780-6403-4dda-b68a-865eb4e5c28d" alt="" width="600" height="300">
+
+~~~
+
+function digitize(n) {
+  return n.toString().split('').reverse().map(Number);
+}
+  
+~~~
+
+<h2>Truthy and Falsy 🥋 - Codewars</h2>
+<b>"You are given two empty arrays (truthy and falsy) and you have to fill this array with at least 5 elements in each which will evaluate to true or false accordingly."</b>
+<h3>Solution</h3>
+<img src="https://github.com/drewbydiego/core-code-from-scratch-readme/assets/76753050/08ef5632-af1a-4fdc-8500-ffe804ccb4a9" alt="" width="600" height="300">
+
+~~~
+
+const truthy = [1, "Hello", [], {}, true];
+const falsy = [0, "", null, undefined, false];
+
+  
+~~~
+
+<h2>Training JS #4: Basic data types--Array 🥋 - Codewars</h2>
+<b>"I've written five functions. Each function receives a parameter arr which is an array. Complete the functions using arr inside the function bodies."</b>
+<h3>Solution</h3>
+<img src="https://github.com/drewbydiego/core-code-from-scratch-readme/assets/76753050/689d99e2-ee65-41c6-983d-ec2b437484cc" alt="" width="600" height="300">
+
+~~~
+function getLength(arr) {
+
+  return arr.length;
+}
+
+function getFirst(arr) {
+
+  return arr[0];
+}
+
+function getLast(arr) {
+
+  return arr[arr.length - 1];
+}
+
+function pushElement(arr) {
+  var el = 1;
+  arr.push(el);
+  return arr;
+}
+
+function popElement(arr) {
+  arr.pop();
+  return arr;
+}
+
+
+  
+~~~
