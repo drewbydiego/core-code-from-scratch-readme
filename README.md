@@ -8,4 +8,6 @@
   <li><h2><a href="https://github.com/drewbydiego/core-code-from-scratch-readme/blob/master/README%20Week06%20Challenges.md" target="_blank">Weekly challenges - Week 6</a>🗂️</h2></li>
  </li>
   <li><h2><a href="https://github.com/drewbydiego/core-code-from-scratch-readme/blob/master/README%20Week07%20Challenges.md" target="_blank">Weekly challenges - Week 7</a>🗂️</h2></li>
+   </li>
+  <li><h2><a href="https://github.com/drewbydiego/core-code-from-scratch-readme/blob/master/README%20Week08%20Challenges.md" target="_blank">Weekly challenges - Week 8</a>🗂️</h2></li>
 </ul>
