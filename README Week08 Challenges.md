@@ -87,3 +87,59 @@ function calculate(num1, operation, num2) {
 
 
 ~~~
+
+<h1>Week challenges (Tuesday) 💻</h1>
+<h2>Even or odd 🤖 - codewars</h2>
+<b>"In javascript Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers. "</b>
+<h3>Solution</h3>
+
+<img src="https://github.com/drewbydiego/core-code-from-scratch-readme/assets/76753050/4b77229c-ffa1-45cf-b4fd-15e13d0739f3" alt="" width="600" height="300">
+
+~~~javascript
+function evenOrOdd(number) {
+  if(number % 2 ===0){
+    return "Even"
+  }else{
+    return "Odd"
+  }
+}
+~~~
+
+<h2>A wolf in sheep's clothing 🤖 - codewars</h2>
+<b>"If the wolf is the closest animal to you, return "Pls go away and stop eating my sheep". Otherwise, return "Oi! Sheep number N! You are about to be eaten by a wolf!" where N is the sheep's position in the queue."</b>
+<h3>Solution</h3>
+
+<img src="https://github.com/drewbydiego/core-code-from-scratch-readme/assets/76753050/3610aad5-ac65-4db8-a081-409a22f2ae6a" alt="" width="600" height="300">
+
+~~~javascript
+
+function warnTheSheep(queue) {
+  const wolfIndex = queue.findIndex(animal => animal === 'wolf');
+  const sheepIndex = queue.length - wolfIndex - 1;
+
+  if (sheepIndex === 0) {
+    return "Pls go away and stop eating my sheep";
+  } else {
+    return "Oi! Sheep number " + sheepIndex + "! You are about to be eaten by a wolf!";
+  }
+}
+~~~
+
+<h2>Decode the morse code 🤖 - codewars</h2>
+<h3>Solution</h3>
+
+<img src="https://github.com/drewbydiego/core-code-from-scratch-readme/assets/76753050/16b36683-bbb8-4a91-a6d7-7d73f2607b16" alt="" width="600" height="300">
+
+
+~~~javascript
+
+decodeMorse = function(morseCode){
+  function decodeMorseLetter(letter) {
+    return MORSE_CODE[letter];
+  }
+  function decodeMorseWord(word) {
+    return word.split(' ').map(decodeMorseLetter).join('');
+  }
+  return morseCode.trim().split('   ').map(decodeMorseWord).join(' ');
+}
+~~~
