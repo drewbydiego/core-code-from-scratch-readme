@@ -143,3 +143,81 @@ decodeMorse = function(morseCode){
   return morseCode.trim().split('   ').map(decodeMorseWord).join(' ');
 }
 ~~~
+
+<h1>Week challenges (Wednesday) 💻</h1>
+<h2>Who likes it? 🤖 - codewars</h2>
+<b>"Implement the function which takes an array containing the names of people that like an item. It must return the display text as shown in the examples:"</b>
+<h3>Solution</h3>
+
+<img src="https://github.com/drewbydiego/core-code-from-scratch-readme/assets/76753050/05b0e673-603f-4ad5-87da-72c36f97e76e" alt="" width="600" height="300">
+
+~~~javascript
+function likes(names) {
+  const length = names.length;
+
+  if (length === 0) {
+    return 'no one likes this';
+  } else if (length === 1) {
+    return `${names[0]} likes this`;
+  } else if (length === 2) {
+    return `${names[0]} and ${names[1]} like this`;
+  } else if (length === 3) {
+    return `${names[0]}, ${names[1]} and ${names[2]} like this`;
+  } else {
+    const remainingCount = length - 2;
+    return `${names[0]}, ${names[1]} and ${remainingCount} others like this`;
+  }
+}
+
+~~~
+
+
+<h2>Bit counting 🤖 - codewars</h2>
+<b>"Write a function that takes an integer as input, and returns the number of bits that are equal to one in the binary representation of that number. You can guarantee that input is non-negative."</b>
+<h3>Solution</h3>
+
+<img src="https://github.com/drewbydiego/core-code-from-scratch-readme/assets/76753050/29615c27-8e98-4d66-afb6-3f07976a6f5f" alt="" width="600" height="300">
+
+~~~javascript
+var countBits = function(n) {
+  const binary = n.toString(2);
+
+  let count = 0;
+  for (let i = 0; i < binary.length; i++) {
+    if (binary[i] === '1') {
+      count++;
+    }
+  }
+
+  return count;
+};
+
+~~~
+
+<h2>Your order, please 🤖 - codewars</h2>
+<b>"Your task is to sort a given string. Each word in the string will contain a single number. This number is the position the word should have in the result."</b>
+<h3>Solution</h3>
+
+<img src="https://github.com/drewbydiego/core-code-from-scratch-readme/assets/76753050/b431916c-9548-464e-b858-d00e3029642e" alt="" width="600" height="300">
+
+~~~javascript
+function order(words) {
+  if (words.length === 0) {
+    return "";
+  }
+
+  const wordArray = words.split(" ");
+  const sortedArray = [];
+
+  for (let i = 1; i <= 9; i++) {
+    for (const word of wordArray) {
+      if (word.includes(i.toString())) {
+        sortedArray.push(word);
+      }
+    }
+  }
+
+  return sortedArray.join(" ");
+}
+
+~~~
