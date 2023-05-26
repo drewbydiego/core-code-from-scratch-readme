@@ -221,3 +221,114 @@ function order(words) {
 }
 
 ~~~
+
+
+<h1>Week challenges (Thursday) 💻</h1>
+<h2>Counting duplicates 🤖 - codewars</h2>
+<b>"Write a function that will return the count of distinct case-insensitive alphabetic characters and numeric digits that occur more than once in the input string. The input string can be assumed to contain only alphabets (both uppercase and lowercase) and numeric digits."</b>
+<h3>Solution</h3>
+
+<img src="https://github.com/drewbydiego/core-code-from-scratch-readme/assets/76753050/a08aa98c-f9e1-4630-b9da-1e40325ca3ec" alt="" width="600" height="300">
+
+~~~javascript
+function duplicateCount(text) {
+  text = text.toLowerCase();
+  
+  var charCount = {};
+  
+  for (var i = 0; i < text.length; i++) {
+    var char = text[i]; 
+    if (!char.match(/[a-z0-9]/i)) {
+      continue;
+    }
+    if (!charCount[char]) {
+      charCount[char] = 0;
+    }
+    charCount[char]++;
+  }
+  
+  var duplicateCount = 0;
+  for (var key in charCount) {
+    if (charCount[key] > 1) {
+      duplicateCount++;
+    }
+  }
+  
+  return duplicateCount;
+}
+~~~
+
+<h2>Encrypt this! 🤖 - codewars</h2>
+<b>"You want to create secret messages which can be deciphered by the Decipher this! kata."</b>
+<h3>Solution</h3>
+<img src="https://github.com/drewbydiego/core-code-from-scratch-readme/assets/76753050/b4fd033c-5bbd-451a-ab8d-ab3d1276af3e" alt="" width="600" height="300">
+
+~~~javascript
+function encryptThis(message) {
+  return message.split(' ').map(function(word) {
+    var firstChar = word.charCodeAt(0);
+    if (word.length > 2) {
+      var secondChar = word.charAt(1);
+      var lastChar = word.charAt(word.length - 1);
+      word = firstChar + lastChar + word.substring(2, word.length - 1) + secondChar;
+    } else if (word.length === 2) {
+      word = firstChar + word.charAt(1);
+    } else {
+      word = firstChar.toString();
+    }
+    return word;
+  }).join(' ');
+}
+
+~~~
+
+
+<h2>Valid parentheses 🤖 - codewars</h2>
+<b>"Write a function that takes a string of parentheses, and determines if the order of the parentheses is valid. The function should return true if the string is valid, and false if it's invalid."</b>
+<h3>Solution</h3>
+<img src="https://github.com/drewbydiego/core-code-from-scratch-readme/assets/76753050/50074ecf-25d4-4f13-8a73-fe44ef39b323" alt="" width="600" height="300">
+<img src="https://github.com/drewbydiego/core-code-from-scratch-readme/assets/76753050/485a23c9-2f4b-4284-80aa-f6cab1bba5d8" alt="" width="600">
+
+~~~javascript
+function validParentheses(parens) {
+  var stack = [];
+  
+  for (var i = 0; i < parens.length; i++) {
+    var char = parens[i];
+    
+    if (char === '(') {
+      stack.push(char); 
+    } else if (char === ')') {
+      if (stack.length === 0) {
+        return false; 
+      }
+      stack.pop(); 
+  }
+  
+  return stack.length === 0; 
+}
+
+~~~
+
+
+<h2>Convert string to camel case 🤖 - codewars</h2>
+<b>"Complete the method/function so that it converts dash/underscore delimited words into camel casing. The first word within the output should be capitalized only if the original word was capitalized (known as Upper Camel Case, also often referred to as Pascal case). The next words should be always capitalized."</b>
+<h3>Solution</h3>
+<img src="https://github.com/drewbydiego/core-code-from-scratch-readme/assets/76753050/a9ab5c75-9fcd-406a-9503-577079a343a6" alt="" width="600" height="300">
+
+~~~javascript
+function toCamelCase(str) {
+  var words = str.split(/[-_]/); 
+  
+  var camelCase = words.map(function(word, index) {
+    if (index === 0) {
+      return word; 
+    } else {
+      return word.charAt(0).toUpperCase() + word.slice(1); 
+    }
+  });
+  
+  return camelCase.join(''); 
+}
+
+~~~
