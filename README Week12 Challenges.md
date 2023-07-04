@@ -117,3 +117,75 @@ console.log(subtract(10, 4));
 ~~~
 <img src="https://github.com/drewbydiego/core-code-from-scratch-readme/assets/76753050/21d0256f-d103-4682-b53f-399310373540">
 
+<h1>Week challenges (Thursday) 💻🐔</h1>
+<h2>1. Express.JS Core Understanding Learning Exercise 🧠</h2>
+
+~~~javascript
+
+const express = require("express");
+const app = express();
+const port = 3000;
+
+app.get("/", (req, res) => {
+  res.send("Hello World!");
+});
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`);
+});
+
+~~~
+<img src="https://github.com/drewbydiego/core-code-from-scratch-readme/assets/76753050/ae097200-a9df-4ac1-8399-3f7c1b1f1c00">
+<img src="https://github.com/drewbydiego/core-code-from-scratch-readme/assets/76753050/f83782cd-1dfb-4daf-b6fb-943211156884">
+<h2>2. Forrest Gump Ping-Pong API 🏓</h2>
+
+
+~~~javascript
+
+const express = require("express");
+const app = express();
+const port = 3000;
+
+app.get("/api/buba-gump", (req, res) => {
+  const playerMove = req.query.move;
+
+  if (playerMove === "ping") {
+    res.json({ message: "pong" });
+  } else if (playerMove === "pong") {
+    res.json({ message: "ping" });
+  } else {
+    res.status(400).json({ error: "Invalid move" });
+  }
+});
+
+
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
+
+
+~~~
+<img src="https://github.com/drewbydiego/core-code-from-scratch-readme/assets/76753050/7c19ad5e-1ff0-44fd-a646-4c5297d0471c">
+
+<h2>Delayed Response API ⏳ Practice 💻</h2>
+
+~~~javascript
+
+const express = require("express");
+const app = express();
+const port = 3000;
+
+app.get("/api/delay/:time", (req, res) => {
+  const delay = parseInt(req.params.time, 10) || 1000;
+
+  setTimeout(() => {
+    res.send("Delayed response!");
+  }, delay);
+});
+
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
+
+~~~
+<img src="https://github.com/drewbydiego/core-code-from-scratch-readme/assets/76753050/f59eea0d-631a-461c-810a-3855a63c7049">
