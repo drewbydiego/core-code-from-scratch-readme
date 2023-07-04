@@ -70,3 +70,50 @@ The main difference between CommonJS and ES modules is the file structure. With 
 -Third-Party Modules<br>
 -Local Modules<br>
 </p>
+<h2>Node.JS Hello World - Practice</h2>
+
+<img src="https://github.com/drewbydiego/core-code-from-scratch-readme/assets/76753050/e2a211ac-327f-4bad-9e5c-9c5d9fbe9df4">
+
+<p>
+  0. Why do we run the npm init command and not node init to create a new Node.JS project?<br>
+  We run the npm init command instead of node init because npm (Node Package Manager) is a tool that helps manage JavaScript packages and dependencies. It provides commands to initialize and manage projects, while node is the command used to run JavaScript code.<br><br>
+  1. When you entered the npm init command and answered the questions you saw in the terminal, a new file called packacke.json was generated.<br>
+  The package.json file acts as a manifest or configuration file for a Node.js project. It contains important information about the project, such as its name, version,   dependencies, and more. It serves as a central place to document and manage project-related details.<br></br>
+  -What does this file do?<br>
+  The package.json file in a Node.js project serves as a manifest or configuration file that contains important information and settings related to the project.<br><br>
+  -Why is this file generated?<br>
+  The package.json file is generated in a Node.js project for several reasons: Dependency Management, Package Publishing, Script Definitions.
+</p>
+<h2>Node.JS Module System Practice 💻</h2>
+
+
+~~~javascript
+
+// operations.js
+function sum(a, b) {
+  return a + b;
+}
+
+function subtract(a, b) {
+  return a - b;
+}
+
+module.exports = {
+  sum,
+  subtract,
+};
+
+~~~
+
+~~~javascript
+
+// main.js
+const { sum, subtract } = require("./operations");
+
+console.log(sum(5, 3)); 
+console.log(subtract(10, 4)); 
+
+
+~~~
+<img src="https://github.com/drewbydiego/core-code-from-scratch-readme/assets/76753050/21d0256f-d103-4682-b53f-399310373540">
+
