@@ -15,4 +15,5 @@
         <li><h2><a href="https://github.com/drewbydiego/core-code-from-scratch-readme/blob/master/README%20Week11%20Challenges.md" target="_blank">Weekly challenges - Week 11</a>🗂️</h2></li>
        <li><h2><a href="https://github.com/drewbydiego/core-code-from-scratch-readme/blob/master/README%20Week12%20Challenges.md" target="_blank">Weekly challenges - Week 12</a>🗂️</h2></li>
         <li><h2><a href="https://github.com/drewbydiego/core-code-from-scratch-readme/blob/master/README%20Week13%20Challenges.md" target="_blank">Weekly challenges - Week 13</a>🗂️</h2></li>
+         <li><h2><a href="https://github.com/drewbydiego/core-code-from-scratch-readme/blob/master/README%20Week14%20Challenges.md" target="_blank">Weekly challenges - Week 14</a>🗂️</h2></li>
 </ul>
